@@ -1,0 +1,1 @@
+document.write("我是被外部引用的");
