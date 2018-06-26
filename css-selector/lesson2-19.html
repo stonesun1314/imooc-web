@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>动态伪类</title>
+        <style type="text/css">
+            /*此处写代码*/
+            input:hover {
+                border-color: red;
+            }
+            input[name="username"]:focus {
+                background: orange;
+            }
+            input[name="password"]:focus {
+                background: yellow;
+            }            
+        </style>
+    </head>
+    <body>
+        <!-- 此处写代码 -->
+        用户名: <input  name = "username" type="text">
+        <br>
+        密码: <input name="password" type="password">
+    </body>
+</html>
