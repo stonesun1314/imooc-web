@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3-5</title>
+    <style>
+    .container {
+    	width: 500px;
+    	height: 300px;
+        display: block;
+    }
+    .container>div {
+		display: inline-block;
+		width: 100px;
+		height: 130px;
+		margin-left: 20px;
+    }
+    .container>div>div{
+    	width: 100px;
+    	height: 100px;
+    	margin-top: 10px;
+
+    }
+    .top {
+		background: -webkit-linear-gradient(top, yellow, red);
+		background:    -moz-linear-gradient(bottom, yellow , red);
+		background:      -o-linear-gradient(bottom, yellow , red);
+		background:         linear-gradient(to bottom, yellow , red);
+    }
+    .left {
+		background: -webkit-linear-gradient(left, yellow, red);
+		background:    -moz-linear-gradient(right, yellow , red);
+		background:      -o-linear-gradient(right, yellow , red);
+		background:         linear-gradient(to right, yellow , red);
+    }
+    .lefttop {
+		background: -webkit-linear-gradient(left top, yellow, red);
+		background:    -moz-linear-gradient(left bottom, yellow , red);
+		background:      -o-linear-gradient(left bottom, yellow , red);
+		background:         linear-gradient(to bottom, yellow , red);
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <span>上下方向渐变 </span>
+            <div class="top"></div>
+        </div>
+        <div>
+            <span>左右方向渐变 </span>
+            <div class="left"></div>
+        </div>
+        <div>
+            <span>对角方向渐变 </span>
+            <div class="lefttop"></div>
+        </div>
+    </div>
+</body>
+
+</html>
