@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>background-origin</title>
+        <style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+
+		div {
+			width: 500px;
+			height: 200px;
+			border: 10px solid rgba(255,0,255,1);
+			background: url(http://climg.mukewang.com/582c342b0001fd6507000210.jpg) no-repeat center center;
+			background-clip: content-box;
+	
+		}
+
+		div:hover {
+/*			background: url("http://climg.mukewang.com/582c34220001091605000150.jpg") no-repeat 10px 10px;
+			background-size: cover;
+			background-origin: padding-box;*/
+			background-image: url("http://climg.mukewang.com/582c34220001091605000150.jpg");
+			background-position: 10px 10px;
+			background-size: cover;
+		}
+
+
+        </style>
+    </head>
+    <body>
+    	<div></div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>clear</title>
+	<style>
+		header {
+			background: #abcdef;
+		}
+
+		header::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+
+		header > article {
+			float: left;
+			width: 40%;
+			height: 30px;
+			background: #f00;
+		}
+
+		header > aside {
+			float: right;
+			width: 40%;
+			height: 50px;
+			background: #ff0;
+		}
+
+/*		header > div {
+			clear: both;
+		}*/
+	</style>
+</head>
+<body>
+	<header>
+		<article></article>
+		<aside></aside>
+<!-- 		<div></div> -->
+	</header>
+</body>
+</html>
