@@ -12,28 +12,63 @@
         height: 400px;
         background: red;
         margin: 100px auto;
+        position: relative;
     }
 
     div.start {
+        position: relative;
         width: 0;
         height: 0;
-        border-left: 20px solid red;
-        border-bottom: 40px solid yellow;
-        border-right: 20px solid red; 
+        margin-top: 80px;
+        border-left: 100px solid transparent;
+        border-bottom: 70px solid yellow;
+        border-right: 100px solid transparent;
+        transform: rotate(35deg);
     }
+
     div.start::before {
+        position: absolute;
+        /*content 必须有，不然不显示*/
+        content: "";
         width: 0;
         height: 0;
-        border-left: 20px solid red;
-        border-bottom: 40px solid yellow;
-        border-right: 20px solid red; 
+        top: 0px;
+        left: -94px;
+        border-left: 100px solid transparent;
+        border-bottom: 70px solid yellow;
+        border-right: 100px solid transparent;
+        transform: rotate(75deg);
     }
+
     div.start::after {
+        position: absolute;
+        /*content 必须有，不然不显示*/
+        content: "";
         width: 0;
         height: 0;
-        border-left: 20px solid red;
-        border-bottom: 40px solid yellow;
-        border-right: 20px solid red; 
+        top: 0px;
+        left: -100px;
+        border-left: 100px solid transparent;
+        border-bottom: 70px solid yellow;
+        border-right: 100px solid transparent;
+        transform: rotate(-70deg);
+    }
+    div.start:nth-child(1) {
+        transform: scale(0.4) rotate(35deg) translate(50px,130px);
+    }
+    div.start:nth-child(2) {
+        transform: scale(0.15) rotate(3deg) translate(350px,-1069px);
+
+    }
+    div.start:nth-child(3) {
+        transform: scale(0.15) rotate(15deg) translate(150px,-1900px);
+    }    
+    div.start:nth-child(4) {
+        transform: scale(0.15) rotate(13deg) translate(120px,-2550px);
+
+    }    
+    div.start:nth-child(5) {
+        transform: scale(0.15) rotate(15deg) translate(-450px,-3200px);
     }
     </style>
 </head>
@@ -41,11 +76,11 @@
 <body>
     <!-- 此处写代码 -->
     <div class="container">
-        <div class="start center"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="start"></div>
+        <div class="start"></div>
+        <div class="start"></div>
+        <div class="start"></div>
+        <div class="start"></div>
     </div>
 </body>
 

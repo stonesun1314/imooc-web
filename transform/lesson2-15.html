@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3</title>
+    <style type="text/css">
+    /*此处写代码*/
+
+    .book {
+        width: 300px;
+        margin: 45px auto;
+    }
+
+    .book::before {
+		content: "";
+		float: left;
+		width: 150px;
+		height: 200px;
+		background: red;
+		transform: skewY(10deg);
+    }
+
+    .book::after {
+		content: "";
+		float: right;
+		width: 150px;
+		height: 200px;
+		background: red;
+		transform: skewY(-10deg);
+    }
+    </style>
+</head>
+
+<body>
+    <!--此处写代码 -->
+    <div class="book">
+    </div>
+</body>
+
+</html>
