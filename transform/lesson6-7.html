@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>6-7 作业</title>
+    <style>
+    body {
+    	width: 100%;
+    	height: 100%;
+        background: #fff;
+    }
+
+    .container {
+        width: 900px;
+        height: 600px;
+        margin: 0 auto;
+        background: -webkit-repeating-linear-gradient(top, rgb(196, 228, 253) 0, rgba(196, 228, 253, 0) 60%, rgb(148, 190, 89, 0) 60%, rgb(148, 190, 89, 1) 100%);
+        background: -moz-repeating-linear-gradient(bottom, rgb(196, 228, 253) 0, rgba(196, 228, 253, 0) 60%, rgb(148, 190, 89, 0) 60%, rgb(148, 190, 89, 1) 100%);
+        background: -o-repeating-linear-gradient(bottom, rgb(196, 228, 253) 0, rgba(196, 228, 253, 0) 60%, rgb(148, 190, 89, 0) 60%, rgb(148, 190, 89, 1) 100%);
+        background: repeating-linear-gradient(to bottom, rgb(196, 228, 253) 0, rgba(196, 228, 253, 0) 60%, rgb(148, 190, 89, 0) 60%, rgb(148, 190, 89, 1) 100%);
+    }
+
+    .cloud {
+        position: relative;
+        top: 50px;
+        width: 200px;
+        height: 60px;
+        border-radius: 200px;
+        background: #fff;
+        margin: 60px auto;
+    }
+
+    .cloud:before {
+        content: "";
+        position: absolute;
+        background: #ffffff;
+        width: 100px;
+        height: 80px;
+        border-radius: 100px;
+        transform: rotate(30deg);
+        top: -13px;
+        left: 18px;
+    }
+
+    .cloud:after {
+        content: "";
+        position: absolute;
+        width: 140px;
+        height: 100px;
+        transform: rotate(-30deg);
+        left: 35px;
+        top: -28px;
+        background: #ffffff;
+        border-radius: 150px;
+    }
+	/*第一朵云彩*/
+    .cloud:nth-child(1) {
+        transform: translate3d(-100px, 50px, -150px) scale(.3);
+    }
+	/*第二朵云彩*/
+    .cloud:nth-child(2) {
+        transform: translate3d(50px, -100px, -10px) scale(.5);
+    }
+	/*第三朵云彩*/
+    .cloud:nth-child(3) {
+        transform: translate3d(200px, -150px, -20px) scale(.5);
+    }
+	/*第四朵云彩*/
+    .cloud:nth-child(4) {
+		transform: translate3d(270px, -400px, -100px) scale(.2);
+    }
+	/*第五朵云彩*/
+    .cloud:nth-child(5) {
+        transform: translate3d(350px, -450px, -170px) scale(.4);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    </div>
+</body>
+
+</html>
